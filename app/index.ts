@@ -16,6 +16,14 @@ let themes: string[][] =
 
 //TODO on install: theme = themes[prefs] ?? themes[0]
 //then remove in css
+let prefs: number;
+for(let c:number = 0; c<themes[prefs ?? 0].length; c++)
+        {
+            (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
+            {
+                el.style.fill = themes[prefs ?? 0][c];   
+            });
+        };
 
 //apply color/fill on evt per class: themes[t][c]
 messaging.peerSocket.addEventListener("message", (evt) => 
@@ -30,9 +38,7 @@ messaging.peerSocket.addEventListener("message", (evt) =>
                 el.style.fill = themes[t][c];   
             });
         };
-        console.log("themes[t]: " + themes[t]);//write this to preferences
-        let preferences = themes[t];
-        console.log("preferences: " + themes[t]);
+        let preferences = t;
     };
 });
 
