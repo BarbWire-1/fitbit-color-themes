@@ -14,7 +14,7 @@ let themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-//apply on evt per class: themes[t][c]
+//apply color/fill on evt per class: themes[t][c]
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
