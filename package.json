@@ -1,0 +1,69 @@
+{
+	"name": "settingstest",
+	"version": "0.0.1",
+	"private": true,
+	"license": "UNLICENSED",
+	"scripts": {
+		"build": "fitbit-build",
+		"debug": "fitbit"
+	},
+	"devDependencies": {
+		"@fitbit/sdk": "~5.0.2",
+		"@fitbit/sdk-cli": "^1.7.3",
+		"fitbit-sdk-types": "^6.0.1"
+	},
+	"fitbit": {
+		"appUUID": "f100f76b-0a9e-488f-ba35-d1a8531a2d4b",
+		"appType": "clockface",
+		"appDisplayName": "settingsTest",
+		"iconFile": "resources/icon.png",
+		"wipeColor": "#8bc34a",
+		"requestedPermissions": [],
+		"buildTargets": [
+			"atlas",
+			"vulcan"
+		],
+		"i18n": {
+			"de-DE": {
+				"name": "settingsTest"
+			},
+			"en-US": {
+				"name": "settingsTest"
+			},
+			"es-ES": {
+				"name": "settingsTest"
+			},
+			"fr-FR": {
+				"name": "settingsTest"
+			},
+			"it-IT": {
+				"name": "settingsTest"
+			},
+			"ja-JP": {
+				"name": "settingsTest"
+			},
+			"ko-KR": {
+				"name": "settingsTest"
+			},
+			"nl-NL": {
+				"name": "settingsTest"
+			},
+			"sv-SE": {
+				"name": "settingsTest"
+			},
+			"zh-CN": {
+				"name": "settingsTest"
+			},
+			"zh-TW": {
+				"name": "settingsTest"
+			}
+		},
+		"defaultLanguage": "en-US"
+	},
+	"dependencies": {
+		
+		
+		"bin": "^0.0.0",
+		"pnpm": "^6.15.1"
+	}
+}
