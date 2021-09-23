@@ -30,10 +30,7 @@
 //   
 //   registerSettingsPage(HelloWorld);
 
-let themes = [
-    ['blue', 'red', 'yellow'],
-    ['grey', 'white', 'orange']
-];
+
     
 //EXAMPLE
   function Colors(props) {
@@ -45,9 +42,9 @@ let themes = [
             settingsKey="myColor"
             
             colors={[
-              {color: 'tomato', value: themes[0][0]},
-              {color: 'sandybrown', value: themes[1][0]},
-              {color: 'gold'},
+              {color: 'tomato', value: 0},
+              {color: 'sandybrown', value: 1},
+              {color: 'gold', value: 2},
               {color: 'aquamarine'},
               {color: 'deepskyblue'},
               {color: 'plum'}
@@ -60,16 +57,16 @@ let themes = [
   
   registerSettingsPage(Colors);
   
- 
-  function ListItem(props) {
-    // Correct! There is no need to specify the key here:
-    return <li>{props.value}</li>;
-  }
-  
-  
-  
  //TODO check this
-  
+//   function ListItem(props) {
+//     // Correct! There is no need to specify the key here:
+//     return <li>{props.value}</li>;
+//   }
+//   
+//   
+//   
+//  
+//   
 //   function NumberList(props) {
 //     const numbers = props.numbers;
 //     const listItems = numbers.map((number) =>
@@ -87,20 +84,20 @@ let themes = [
 //   console.log(JSON.stringify(<NumberList numbers={numbers}/>),
 //     );
 
-function ColorList(props) {
-    const myColors = props.cols;
-    const listItems = cols.map((col) =>
-      // Correct! Key should be specified inside the array.
-      <ListItem key={col} value={col} />
-    );
-    return (
-      <ul>
-        {listItems}
-      </ul>
-    );
-  }
-  
-  const cols = ['red','blue','green'];
-  console.log(JSON.stringify(<ColorList cols={cols}/>),
-    );
+// function ColorList(props) {
+//     const myColors = props.cols;
+//     const listItems = cols.map((col) =>
+//       // Correct! Key should be specified inside the array.
+//       <ListItem key={col} value={col} />
+//     );
+//     return (
+//       <ul>
+//         {listItems}
+//       </ul>
+//     );
+//   }
+//   
+//   const cols = ['red','blue','green'];
+//   console.log(JSON.stringify(<ColorList cols={cols}/>),
+//     );
    
