@@ -20,23 +20,25 @@ messaging.peerSocket.addEventListener("message", (evt) =>
     // in settings/index.tsx as item of colors like {color: 'colorShows', value: 0},
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
     {   
-        let t: number = evt.data.value;
+        let t: number = evt.data.value;// index of theme
         // console.log("evt.data: " + JSON.stringify(evt.data));
         // console.log("evt.data.key: "+ evt.data.key)
         // console.log("evt.data.value: " + evt.data.value);
         // console.log("themes[evt.data.value]: " + themes[evt.data.value]);
         //Iterate through number of colors per theme 
-        //and assign color [i] per className where className = color+i
-        for(let i:number = 0; i<themes[t].length; i++)
+        //and assign color [c] per className where className = color+c
+        for(let c:number = 0; c<themes[t].length; c++)
         {
             //console.log("themes[evt.data.value].length: " + themes[t].length);
-            (document.getElementsByClassName("color" + i) as GraphicsElement[]).forEach((el) =>
+            (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
             {
                 //console.log("themes[evt.data.value][" + i + "]: " + themes[evt.data.value][i]);
-                el.style.fill = themes[t][i];
+                el.style.fill = themes[t][c];
             })
         }
     }
 });
+
+//TODO evtl. diff structure needed to save settings?
 
 
