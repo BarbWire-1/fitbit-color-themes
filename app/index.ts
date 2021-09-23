@@ -24,9 +24,10 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         {
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
             {
-                el.style.fill = themes[t][c];
+                el.style.fill = themes[t][c];   
             });
         };
+        console.log("themes[t]: " + themes[t]);//write this to preferences
     };
 });
 
