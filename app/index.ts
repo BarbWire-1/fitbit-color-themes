@@ -28,9 +28,10 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         //and assign color [i] per className where className = color+i
         for(let i = 0; i<themes[evt.data.value].length; i++)
         {
+            console.log("themes[evt.data.value].length: " + themes[evt.data.value].length);
             (document.getElementsByClassName("color" + i) as GraphicsElement[]).forEach((el) =>
             {
-                console.log("themes[evt.data.value][" + i + "]: " + themes[evt.data.value][i]);
+                //console.log("themes[evt.data.value][" + i + "]: " + themes[evt.data.value][i]);
                 el.style.fill = themes[evt.data.value][i];
             })
         }
