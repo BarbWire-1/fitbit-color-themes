@@ -28,6 +28,8 @@ messaging.peerSocket.addEventListener("message", (evt) =>
             });
         };
         console.log("themes[t]: " + themes[t]);//write this to preferences
+        let preferences = themes[t];
+        console.log("preferences: " + themes[t]);
     };
 });
 
