@@ -62,6 +62,7 @@ settingsStorage.addEventListener("change", (evt) => {
 if (companion.launchReasons.settingsChanged) {
   // Send the value of the setting
   sendValue(KEY_COLOR, settingsStorage.getItem(KEY_COLOR));
+  console.log(sendValue(KEY_COLOR, settingsStorage.getItem(KEY_COLOR)));
 }
 
 function sendValue(key, val) {
