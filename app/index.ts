@@ -3,7 +3,7 @@ import document  from "document";
 
 
 //COLOR-THEMES
-//themes
+//colors - get theme per data.value
 let themes = [
     ['tomato', 'blue', 'yellow'],
     ['sandybrown', 'white', 'grey'],
@@ -13,32 +13,20 @@ let themes = [
     ['plum', 'magenta', 'white'],
 ];
 
-
+//apply on evt per class
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
-    //evt.data.key here colorThemes (colors []), evt.data.value here the index of chosen theme
-    // in settings/index.tsx as item of colors like {color: 'colorShows', value: 0},
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
     {   
-        let t: number = evt.data.value;// index of theme
-        // console.log("evt.data: " + JSON.stringify(evt.data));
-        // console.log("evt.data.key: "+ evt.data.key)
-        // console.log("evt.data.value: " + evt.data.value);
-        // console.log("themes[evt.data.value]: " + themes[evt.data.value]);
-        //Iterate through number of colors per theme 
-        //and assign color [c] per className where className = color+c
+        let t: number = evt.data.value;
         for(let c:number = 0; c<themes[t].length; c++)
         {
-            //console.log("themes[evt.data.value].length: " + themes[t].length);
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
             {
-                //console.log("themes[evt.data.value][" + i + "]: " + themes[evt.data.value][i]);
                 el.style.fill = themes[t][c];
-            })
-        }
-    }
+            });
+        };
+    };
 });
 
 //TODO evtl. diff structure needed to save settings?
-
-
