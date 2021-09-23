@@ -17,8 +17,8 @@ let themes: string[][] =
 
 let prefs: number;
 
-//apply color/fill on evt per class: themes[t][c]
-function applyColors(t){
+//apply colors per class
+function applyColors(t:number){
     for(let c:number = 0; c<themes[t].length; c++)
         {
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
@@ -29,9 +29,8 @@ function applyColors(t){
         prefs = t;
 };
 applyColors(prefs ?? 0);
-console.log(prefs);
 
-
+//get themes[t] on evt then call applyColors
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
@@ -42,4 +41,4 @@ messaging.peerSocket.addEventListener("message", (evt) =>
     console.log("prefs: "+ prefs)
 });
 
-//TODO add shared preferences
+//TODO add shared preferences to save prefs
