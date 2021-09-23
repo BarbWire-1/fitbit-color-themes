@@ -1,4 +1,5 @@
 
     <svg>
-        <rect id="myElement" width="100%" height="100%" x="0" y="0" fill="black" />
+        <rect id="myElement1" class="color0" width="100%" height="100%" x="0" y="0" />
+        <rect id="myElement2" class="color1" width="10%" height="10%" x="100" y="100" />
       </svg>
