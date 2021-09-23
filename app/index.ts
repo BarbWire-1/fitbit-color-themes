@@ -14,6 +14,9 @@ let themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
+//TODO on install: theme = themes[prefs] ?? themes[0]
+//then remove in css
+
 //apply color/fill on evt per class: themes[t][c]
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
