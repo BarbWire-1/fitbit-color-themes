@@ -3,7 +3,7 @@ import document  from "document";
 
 
 //COLOR-THEMES
-//colors - get theme per data.value
+//colors - get theme t per data.value
 let themes: string[][] = 
 [
     ['tomato', 'blue', 'yellow'],
@@ -14,7 +14,7 @@ let themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-//apply on evt per class
+//apply on evt per class: themes[t][c]
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
