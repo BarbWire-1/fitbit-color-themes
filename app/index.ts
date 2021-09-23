@@ -14,32 +14,32 @@ let themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-//TODO on install: theme = themes[prefs] ?? themes[0]
-//then remove in css
+
 let prefs: number;
-for(let c:number = 0; c<themes[prefs ?? 0].length; c++)
-        {
-            (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
-            {
-                el.style.fill = themes[prefs ?? 0][c];   
-            });
-        };
 
 //apply color/fill on evt per class: themes[t][c]
-messaging.peerSocket.addEventListener("message", (evt) => 
-{   
-    if (evt?.data?.value && evt.data.key === "ColorTheme") 
-    {   
-        let t: number = evt.data.value;
-        for(let c:number = 0; c<themes[t].length; c++)
+function applyColors(t){
+    for(let c:number = 0; c<themes[t].length; c++)
         {
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
             {
                 el.style.fill = themes[t][c];   
             });
         };
-        let preferences = t;
+        prefs = t;
+};
+applyColors(prefs ?? 0);
+console.log(prefs);
+
+
+messaging.peerSocket.addEventListener("message", (evt) => 
+{   
+    if (evt?.data?.value && evt.data.key === "ColorTheme") 
+    {   
+        let t: number = evt.data.value;
+        applyColors(t);
     };
+    console.log("prefs: "+ prefs)
 });
 
-//TODO evtl. diff structure needed to save settings?
+//TODO add shared preferences
