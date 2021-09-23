@@ -4,7 +4,8 @@ import document  from "document";
 
 //COLOR-THEMES
 //colors - get theme per data.value
-let themes = [
+let themes: string[][] = 
+[
     ['tomato', 'blue', 'yellow'],
     ['sandybrown', 'white', 'grey'],
     ['gold', 'limegreen', 'black'],
