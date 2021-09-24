@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { me } from 'appbit';
 
-const FILE_NAME = "settingsColorTest2.cbor";
+const FILE_NAME = "fitbit_color_themes.cbor";
 
 export let preferences = {};
 

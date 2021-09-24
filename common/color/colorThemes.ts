@@ -1,13 +1,15 @@
+//define your color sets here as usual
 const themes: string[][] = 
 [
     ['tomato', 'blue', 'yellow'],
     ['sandybrown', 'white', 'grey'],
-    ['gold', 'limegreen', 'black'],
+    ['gold', 'limegreen', '#000000'],
     ['aquamarine', 'turquoise', 'yellow'],
     ['deepskyblue', 'blue', 'red'],
     ['plum', 'magenta', 'white'],
 ];
 
+//writes array with first color of each theme
 let setColors:string [] = [];
 for(let i: number = 0; i<themes.length; i++)
 {

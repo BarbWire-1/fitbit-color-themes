@@ -15,7 +15,7 @@
 	"fitbit": {
 		"appUUID": "f100f76b-0a9e-488f-ba35-d1a8531a2d4b",
 		"appType": "clockface",
-		"appDisplayName": "settingsColorTest2",
+		"appDisplayName": "fitbit-color-themes",
 		"iconFile": "resources/icon.png",
 		"wipeColor": "#8bc34a",
 		"requestedPermissions": [],
@@ -25,37 +25,37 @@
 		],
 		"i18n": {
 			"de-DE": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"en-US": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"es-ES": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"fr-FR": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"it-IT": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"ja-JP": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"ko-KR": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"nl-NL": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"sv-SE": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"zh-CN": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			},
 			"zh-TW": {
-				"name": "settingsColorTest2"
+				"name": "fitbit-color-themes"
 			}
 		},
 		"defaultLanguage": "en-US"
