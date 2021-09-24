@@ -1,5 +1,6 @@
 import * as messaging from "messaging";
 import document  from "document";
+import { preferences} from "../common/shared_preferences";
 
 
 //COLOR-THEMES
@@ -15,10 +16,10 @@ let themes: string[][] =
 ];
 
 
-let prefs: number;
+let prefsColor: number = preferences.prefsColor;
 
-//apply colors per class
-function applyColors(t:number){
+//apply theme-colors per class
+function applyColors(t: number){
     for(let c:number = 0; c<themes[t].length; c++)
         {
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
@@ -26,9 +27,9 @@ function applyColors(t:number){
                 el.style.fill = themes[t][c];   
             });
         };
-        prefs = t;
+        prefsColor = t;
 };
-applyColors(prefs ?? 0);
+applyColors(prefsColor ?? 0);//initial themes[0]
 
 //get themes[t] on evt then call applyColors
 messaging.peerSocket.addEventListener("message", (evt) => 
@@ -37,8 +38,8 @@ messaging.peerSocket.addEventListener("message", (evt) =>
     {   
         let t: number = evt.data.value;
         applyColors(t);
+        preferences.prefsColor = t;
     };
-    console.log("prefs: "+ prefs)
 });
 
 //TODO add shared preferences to save prefs
