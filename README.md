@@ -9,4 +9,5 @@ app/index.ts:<br>
 import {applyColors, prefColor} from "../common/color/applyColors";<br>
 applyColors(prefColor);//initial themes[0]<br><br>
 
-everything else is integrated
+everything else is integrated<br><br>
+(Only shirt description. It's not complete yet)
