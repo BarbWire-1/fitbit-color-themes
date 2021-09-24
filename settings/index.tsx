@@ -1,10 +1,3 @@
-import { preferences} from "../common/shared_preferences";
-// import { readFileSync, writeFileSync } from "../fs";
-// import { me } from "../appbit";
-// 
-// 
-// let setColor: string = preferences.setColor;
-// console.log(setColor);
 
   function Colors(props) {
     return (

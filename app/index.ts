@@ -14,28 +14,28 @@ const themes: string[][] =
     ['deepskyblue', 'blue', 'red'],
     ['plum', 'magenta', 'white'],
 ];
-let setColors: string[] = [];
-console.log("setColors: "+ setColors);
-for(let i: number = 0; i<themes.length; i++)
-{
-    setColors[i]= (themes[i][0]);
-    console.log("setColors: "+ setColors);
-    
-};
+
+////I'd like to send these values to <colors> in settings
+// let setColors: string[] = [];
+// for(let i: number = 0; i<themes.length; i++)
+// {
+//     setColors[i]= (themes[i][0]);  
+// };
+// console.log("setColors: "+ setColors);
 //setColors = preferences.setColors;
 
 let prefColor: number = preferences.prefColor ?? 0;
 
 //apply theme-colors per class
-function applyColors(t: number){
-    for(let c:number = 0; c<themes[t].length; c++)
+function applyColors(theme: number){
+    for(let c:number = 0; c<themes[theme].length; c++)
         {
             (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
             {
-                el.style.fill = themes[t][c];   
+                el.style.fill = themes[theme][c];   
             });
         };
-        prefColor = t;
+        prefColor = theme;
 };
 applyColors(prefColor);//initial themes[0]
 

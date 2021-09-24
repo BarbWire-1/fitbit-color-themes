@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { me } from 'appbit';
 
-const FILE_NAME = "settingsTestColor.cbor";
+const FILE_NAME = "settingsColorTest1.cbor";
 
 export let preferences = {};
 
