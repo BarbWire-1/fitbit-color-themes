@@ -1,6 +1,6 @@
 import * as messaging from "messaging";
 import document  from "document";
-import { preferences} from "./shared_preferences";
+import { preferences} from "../shared_preferences";
 import { themes } from "./colorThemes";
 
 

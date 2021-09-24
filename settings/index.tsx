@@ -1,5 +1,19 @@
-import {setColors} from "../common/colorThemes";
+import {setColors} from "../common/color/colorThemes";
 
+let myColors =[]
+let v = 0;
+
+//write an object from setColors array (first of each theme)
+setColors.forEach((color, value) => 
+{ 
+  myColors.push(
+  {
+    color: setColors[v], 
+    value: v
+  }) 
+  v++; 
+});
+//console.log(JSON.stringify(myColors));
 
   function Colors(props) {
     return (
@@ -7,16 +21,12 @@ import {setColors} from "../common/colorThemes";
         <Section
           title={<Text bold align="center">Color Settings</Text>}>
           <ColorSelect
-            settingsKey="ColorTheme"
+          
+            settingsKey="ColorTheme" 
             
-            colors={[
-              {color: setColors[0], value: 0},
-              {color: setColors[1], value: 1},
-              {color: setColors[2], value: 2},
-              {color: setColors[3], value: 3},
-              {color: setColors[4], value: 4},
-              {color: setColors[5], value: 5}
-            ]}
+            //so color-dots are always matching first of each color-theme "automaticly"
+            colors = {myColors}
+            
           />
         </Section>
       </Page>
