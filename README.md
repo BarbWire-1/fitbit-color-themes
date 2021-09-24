@@ -6,7 +6,7 @@ resouces/index.view:<br>
 all elements wich should have a color of theme need to be class="color+IndexOfColorInTheme" like color0, color1...
 
 app/index.ts:<br>
-import {applyColors, prefColor} from "../common/color/applyColors";
-applyColors(prefColor);//initial themes[0]
+import {applyColors, prefColor} from "../common/color/applyColors";<br>
+applyColors(prefColor);//initial themes[0]<br><br>
 
 everything else is integrated
