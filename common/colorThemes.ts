@@ -15,14 +15,14 @@ const themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-//I'd like to send these values to <colors> in settings
+//export to settings for color dots
 let setColors: string[] = [];
 for(let i: number = 0; i<themes.length; i++)
 {
     setColors[i]= (themes[i][0]);  
 };
-console.log("setColors: "+ setColors);
-//setColors = preferences.setColors;
+
+
 
 let prefColor: number = preferences.prefColor ?? 0;
 
