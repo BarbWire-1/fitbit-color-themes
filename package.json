@@ -10,13 +10,12 @@
 	"devDependencies": {
 		"@fitbit/sdk": "~5.0.2",
 		"@fitbit/sdk-cli": "^1.7.3",
-		"@types/node": "^16.9.6",
 		"fitbit-sdk-types": "^6.0.1"
 	},
 	"fitbit": {
 		"appUUID": "f100f76b-0a9e-488f-ba35-d1a8531a2d4b",
 		"appType": "clockface",
-		"appDisplayName": "settingsTest",
+		"appDisplayName": "settingsColorTest2",
 		"iconFile": "resources/icon.png",
 		"wipeColor": "#8bc34a",
 		"requestedPermissions": [],
@@ -26,37 +25,37 @@
 		],
 		"i18n": {
 			"de-DE": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"en-US": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"es-ES": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"fr-FR": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"it-IT": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"ja-JP": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"ko-KR": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"nl-NL": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"sv-SE": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"zh-CN": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			},
 			"zh-TW": {
-				"name": "settingsTest"
+				"name": "settingsColorTest2"
 			}
 		},
 		"defaultLanguage": "en-US"
