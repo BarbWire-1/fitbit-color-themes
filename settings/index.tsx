@@ -1,3 +1,5 @@
+import {setColors} from "../common/colorThemes";
+
 
   function Colors(props) {
     return (
@@ -8,12 +10,12 @@
             settingsKey="ColorTheme"
             
             colors={[
-              {color: "tomato", value: 0},
-              {color: "sandybrown", value: 1},
-              {color: 'gold', value: 2},
-              {color: 'aquamarine', value: 3},
-              {color: 'deepskyblue', value: 4},
-              {color: 'plum', value: 5}
+              {color: setColors[0], value: 0},
+              {color: setColors[1], value: 1},
+              {color: setColors[2], value: 2},
+              {color: setColors[3], value: 3},
+              {color: setColors[4], value: 4},
+              {color: setColors[5], value: 5}
             ]}
           />
         </Section>

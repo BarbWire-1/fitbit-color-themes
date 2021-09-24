@@ -15,13 +15,13 @@ const themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-////I'd like to send these values to <colors> in settings
-// let setColors: string[] = [];
-// for(let i: number = 0; i<themes.length; i++)
-// {
-//     setColors[i]= (themes[i][0]);  
-// };
-// console.log("setColors: "+ setColors);
+//I'd like to send these values to <colors> in settings
+let setColors: string[] = [];
+for(let i: number = 0; i<themes.length; i++)
+{
+    setColors[i]= (themes[i][0]);  
+};
+console.log("setColors: "+ setColors);
 //setColors = preferences.setColors;
 
 let prefColor: number = preferences.prefColor ?? 0;
@@ -50,5 +50,5 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         preferences.prefColor = t;
     };
 });
-export {applyColors, prefColor};
+export {applyColors, prefColor,setColors};
 
