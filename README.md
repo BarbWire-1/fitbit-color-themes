@@ -7,7 +7,7 @@ all elements wich should have a color of theme need to be class="color+IndexOfCo
 
 app/index.ts:<br>
 import {applyColors, prefColor} from "../common/color/applyColors";<br>
-applyColors(prefColor);//initial themes[0]<br><br>
+applyColors(prefColor);<br>
 (Think, this isn't necessary at all, if there is other content in index.ts)
 
 everything else is integrated<br><br>
