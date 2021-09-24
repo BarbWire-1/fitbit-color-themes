@@ -1,4 +1,4 @@
-import {setColors} from "../common/colorThemes";
+import {setColors} from "../common/themes";
 
 
   function Colors(props) {
