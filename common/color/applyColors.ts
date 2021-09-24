@@ -27,7 +27,7 @@ messaging.peerSocket.addEventListener("message", (evt) =>
     {   
         let t: number = evt.data.value;
         applyColors(t);
-        //save t to "fitbit_collor_themes.cbor"
+        //save t to "fitbit_color_themes.cbor"
         preferences.prefColor = t;
     };
 });

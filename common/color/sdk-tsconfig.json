@@ -8,7 +8,7 @@
 	},
 	"include": [
 		"**/*.ts",
-		"**/*.js",
-		"../node_modules/fitbit-sdk-types/types/companion"
+		"**/*.js"
+		
 	]
 }
