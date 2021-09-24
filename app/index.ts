@@ -5,7 +5,7 @@ import { preferences} from "../common/shared_preferences";
 
 //COLOR-THEMES
 //colors - get theme t per data.value
-let themes: string[][] = 
+const themes: string[][] = 
 [
     ['tomato', 'blue', 'yellow'],
     ['sandybrown', 'white', 'grey'],
@@ -14,9 +14,17 @@ let themes: string[][] =
     ['deepskyblue', 'blue', 'red'],
     ['plum', 'magenta', 'white'],
 ];
+let setColors: string[] = [];
+console.log("setColors: "+ setColors);
+for(let i: number = 0; i<themes.length; i++)
+{
+    setColors[i]= (themes[i][0]);
+    console.log("setColors: "+ setColors);
+    
+};
+//setColors = preferences.setColors;
 
-
-let prefsColor: number = preferences.prefsColor;
+let prefColor: number = preferences.prefColor ?? 0;
 
 //apply theme-colors per class
 function applyColors(t: number){
@@ -27,9 +35,9 @@ function applyColors(t: number){
                 el.style.fill = themes[t][c];   
             });
         };
-        prefsColor = t;
+        prefColor = t;
 };
-applyColors(prefsColor ?? 0);//initial themes[0]
+applyColors(prefColor);//initial themes[0]
 
 //get themes[t] on evt then call applyColors
 messaging.peerSocket.addEventListener("message", (evt) => 
@@ -38,8 +46,8 @@ messaging.peerSocket.addEventListener("message", (evt) =>
     {   
         let t: number = evt.data.value;
         applyColors(t);
-        preferences.prefsColor = t;
+        //save t to "settingsTestColor.cbor"
+        preferences.prefColor = t;
     };
 });
 
-//TODO add shared preferences to save prefs

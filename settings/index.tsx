@@ -1,3 +1,10 @@
+import { preferences} from "../common/shared_preferences";
+// import { readFileSync, writeFileSync } from "../fs";
+// import { me } from "../appbit";
+// 
+// 
+// let setColor: string = preferences.setColor;
+// console.log(setColor);
 
   function Colors(props) {
     return (
@@ -8,8 +15,8 @@
             settingsKey="ColorTheme"
             
             colors={[
-              {color: 'tomato', value: 0},
-              {color: 'sandybrown', value: 1},
+              {color: "tomato", value: 0},
+              {color: "sandybrown", value: 1},
               {color: 'gold', value: 2},
               {color: 'aquamarine', value: 3},
               {color: 'deepskyblue', value: 4},

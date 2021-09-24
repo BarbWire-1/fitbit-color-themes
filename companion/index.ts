@@ -62,7 +62,7 @@ settingsStorage.addEventListener("change", (evt) => {
 if (companion.launchReasons.settingsChanged) {
   // Send the value of the setting
   sendValue(KEY_COLOR, settingsStorage.getItem(KEY_COLOR));
-  console.log(sendValue(KEY_COLOR, settingsStorage.getItem(KEY_COLOR)));
+  //console.log(sendValue(KEY_COLOR, settingsStorage.getItem(KEY_COLOR)));
 }
 
 function sendValue(key, val) {
@@ -77,7 +77,7 @@ function sendSettingData(data) {
   // If we have a MessageSocket, send the data to the device
   if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
     messaging.peerSocket.send(data);
-    console.log("data.value/New ColorTheme: " + data.value);
+    //console.log("data.value/New ColorTheme: " + data.value);
   } else {
     console.log("No peerSocket connection");
   }
