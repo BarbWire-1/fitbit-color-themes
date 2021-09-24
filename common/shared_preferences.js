@@ -5,16 +5,23 @@ const FILE_NAME = "settingsColorTest1.cbor";
 
 export let preferences = {};
 
-try {
+try 
+{
   preferences = readFileSync(FILE_NAME, "cbor");
-} catch (error) {
-  console.warn("Failed to load " + FILE_NAME + ". It is OK if no values were stored yet.");
-}
+} 
+  catch (error) 
+{
+    console.warn("Failed to load " + FILE_NAME + ". It is OK if no values were stored yet.");
+};
 
-me.addEventListener("unload", () => {
-  try {
+me.addEventListener("unload", () => 
+{
+  try 
+  {
     writeFileSync(FILE_NAME, preferences, "cbor");
-  } catch (error) {
+  } 
+  catch (error) 
+  {
     console.error("Failed to save " + FILE_NAME);
   }
-})
+});
