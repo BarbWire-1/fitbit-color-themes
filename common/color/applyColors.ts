@@ -3,7 +3,7 @@ import document  from "document";
 import {preferences} from "../shared_preferences";
 import {themes} from "./colorThemes";
 
-//if no preferences are stored yet (first load/no changes) themes[0]
+//if no preferences are stored yet (first load) themes[0]
 let prefTheme :number = preferences.prefTheme ?? 0;
 
 //apply theme-colors per class
