@@ -1,19 +1,10 @@
 import {themes} from "../common/color/colorThemes";
 
 //create obj, incl each firstColor of theme {color: string, value: number}
-let themesFirst = []
-themes.forEach((color, value) :void => 
-{ 
-  themesFirst.push(
-  {
-    color: color[0],
-    value: value
-  })
-});
-//OR - decide later: forEach is more obvios ;)
-//themesFirst = themes.map((theme, index) => ({ color: theme[0], value: index }))
+const themesFirst = themes.map((theme, index) => ({ color: theme[0], value: index }))
 //console.log(JSON.stringify(themes));
-//console.log(JSON.stringify(themesFirst));
+
+console.log(JSON.stringify(themesFirst));
 
   function Colors(props) 
   {
