@@ -2,9 +2,7 @@ import {themes} from "../common/color/colorThemes";
 
 //create obj, incl each firstColor of theme {color: string, value: number}
 const themesFirst = themes.map((theme, index) => ({ color: theme[0], value: index }))
-//console.log(JSON.stringify(themes));
-
-console.log(JSON.stringify(themesFirst));
+//console.log(JSON.stringify(themesFirst));
 
   function Colors(props) 
   {
