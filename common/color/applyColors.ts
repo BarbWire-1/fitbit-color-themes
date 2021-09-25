@@ -1,13 +1,13 @@
 import * as messaging from "messaging";
 import document  from "document";
-import { preferences} from "../shared_preferences";
-import { themes } from "./colorThemes";
+import {preferences} from "../shared_preferences";
+import {themes} from "./colorThemes";
 
 //if no preferences are stored yet (first load/no changes) themes[0]
 let prefTheme :number = preferences.prefTheme ?? 0;
 
 //apply theme-colors per class
-function applyColors(theme :number)
+function applyColors(theme :number) :void
 {
     for(let c :number = 0; c<themes[theme].length; c++)
     {   
@@ -27,7 +27,7 @@ messaging.peerSocket.addEventListener("message", (evt) =>
 {   
     if (evt?.data?.value && evt.data.key === "ColorTheme") 
     {   
-        let t: number = evt.data.value;
+        let t :number = evt.data.value;
         applyColors(t);
         //save t to "fitbit_color_themes.cbor"
         preferences.prefTheme = t;

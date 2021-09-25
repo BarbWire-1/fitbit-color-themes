@@ -1,9 +1,9 @@
 import {themes} from "../common/color/colorThemes";
 
-let myColors =[]
+let myColors = []
 let v = 0;
 //write an object from themes[v][0](first color of each theme)
-themes.forEach((color, value) => 
+themes.forEach((color, value) :void => 
 { 
   myColors.push(
   {
