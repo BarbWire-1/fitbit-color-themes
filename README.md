@@ -11,7 +11,8 @@ Import {initColorThemes} from "../common/color/applyColors";<br>
 
 Everything else is integrated<br><br>
 
-The latest chosen theme gets written to shared_preferences, so it will start with this on reloading the app<br>
+- The latest chosen theme gets written to shared_preferences, so it will start with this on reloading the app<br>
+- Every first color of themes will automatically appear as color-dot in settings page<br><br>
 (Only short description. It's not complete yet. And sorry, I had some mess with tsconfigs. Will fix that)
 
 Any thoughts, ideas criticism are highly appreciated! :)
