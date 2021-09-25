@@ -35,4 +35,8 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         preferences.prefTheme = t;
     }
 });
-export const initColorThemes = applyColors(prefTheme);
+export function initColorThemes ()
+{
+    applyColors(prefTheme);
+}
+//export const initColorThemes = applyColors(prefTheme);
