@@ -1,17 +1,16 @@
 import {themes} from "../common/color/colorThemes";
 
 let themesFirst = []
-let v = 0;
-//write an object from themes[v][0](first color of each theme)
-themes.forEach((color, value) :void => 
+themes.forEach((theme, index) :void => 
 { 
   themesFirst.push(
   {
-    color: themes[v][0], 
-    value: v
-  }) 
-  v++; 
+    color: theme[0],
+    value: index
+  })
 });
+//OR - decide later: forEach is more obvios ;)
+//themesFirst = themes.map((theme, index) => ({ color: theme[0], value: index }))
 //console.log(JSON.stringify(themesFirst));
 
   function Colors(props) 
