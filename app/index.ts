@@ -1,6 +1,5 @@
-import {applyColors, prefColor} from "../common/color/applyColors";
+import {applyColors, prefTheme} from "../common/color/applyColors";
 
-
-applyColors(prefColor);//initial themes[0]
+applyColors(prefTheme);//initial themes[0]
 
 

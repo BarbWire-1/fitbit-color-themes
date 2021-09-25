@@ -1,3 +1,4 @@
+//shared_preferences taken from: https://github.com/gregoiresage/fitbit-shared-preferences
 import { readFileSync, writeFileSync } from 'fs';
 import { me } from 'appbit';
 
