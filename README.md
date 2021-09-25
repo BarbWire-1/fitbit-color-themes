@@ -2,8 +2,8 @@
 common/color/colorThemes.ts:<br>
 Create array with color themes
 
-resouces/index.view:<br>
-All elements wich should have a color of theme need to be class="color+IndexOfColorInTheme" like color0, color1...
+resources/index.view:<br>
+All elements which should have a color of theme need to be class="color+IndexOfColorInTheme" like color0, color1...
 
 app/index.ts:<br>
 import {initColorThemes} from "../common/color/applyColors";<br>
