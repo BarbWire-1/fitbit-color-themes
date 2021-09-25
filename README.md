@@ -14,3 +14,5 @@ everything else is integrated<br><br>
 (Only short description. It's not complete yet)
 
 Any thoughts, ideas criticism are highly appreciated! :)
+
+(And sorry, had some mess with tsconfigs. Will fix that)
