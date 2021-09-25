@@ -15,7 +15,8 @@ setColors.forEach((color, value) =>
 });
 //console.log(JSON.stringify(myColors));
 
-  function Colors(props) {
+  function Colors(props) 
+  {
     return (
       <Page>
         <Section
@@ -24,7 +25,7 @@ setColors.forEach((color, value) =>
           
             settingsKey="ColorTheme" 
             
-            //so color-dots are always matching first of each color-theme "automaticly"
+            //so color-dots always match first of each color-theme "automatically"
             colors = {myColors}
             
           />

@@ -1,4 +1,4 @@
-//define your color sets here as usual
+//define color sets here as usual
 const themes: string[][] = 
 [
     ['tomato', 'blue', 'yellow'],
