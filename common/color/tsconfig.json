@@ -1,5 +1,5 @@
 {
-	"extends": "../tsconfig.json",
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
 		"target": "es2015",
 		"lib": ["es2015"],
@@ -8,8 +8,7 @@
 	},
 	"include": [
 		"**/*.ts",
-		"**/*.js",
-		"../node_modules/fitbit-sdk-types/types/common"
+		"**/*.js"
 		
 	]
 }
