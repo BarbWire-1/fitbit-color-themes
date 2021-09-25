@@ -1,6 +1,4 @@
-
-
-//From EXAMPLE in SDK doco
+//From EXAMPLE in SDK doco to use settings with KEY
 import { settingsStorage } from "settings";
 import * as messaging from "messaging";
 import { me as companion } from "companion";
