@@ -1,18 +1,18 @@
 import {themes} from "../common/color/colorThemes";
 
-let myColors = []
+let themesFirst = []
 let v = 0;
 //write an object from themes[v][0](first color of each theme)
 themes.forEach((color, value) :void => 
 { 
-  myColors.push(
+  themesFirst.push(
   {
     color: themes[v][0], 
     value: v
   }) 
   v++; 
 });
-//console.log(JSON.stringify(myColors));
+//console.log(JSON.stringify(themesFirst));
 
   function Colors(props) 
   {
@@ -25,7 +25,7 @@ themes.forEach((color, value) :void =>
             settingsKey="ColorTheme" 
             
             //so color-dots always match first of each color-theme "automatically"
-            colors = {myColors}
+            colors = {themesFirst}
             
           />
         </Section>
