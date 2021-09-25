@@ -32,7 +32,11 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         preferences.prefTheme = t;
     }
 });
+export const initColorThemes = applyColors(prefTheme);
+
+    
 
 //TODO test if really necessary
-export {applyColors, prefTheme};
+//export {applyColors, prefTheme};
+
 
