@@ -8,7 +8,10 @@ let prefTheme :number = preferences.prefTheme ?? 0;
 
 //apply theme-colors per class
 function applyColors(theme :number) :void
-{
+{   
+    //here checks for length of current theme, works also, if one color isn't defined
+    //TODO perhaps have a fix var for length of themes?
+    //wouldn't need to check each loop
     for(let c :number = 0; c<themes[theme].length; c++)
     {   
         //elements need to be class="color+indexInTheme" like color0, color1...
