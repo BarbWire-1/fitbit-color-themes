@@ -1,8 +1,8 @@
 import {setColors} from "../common/color/colorThemes";
 
+
 let myColors =[]
 let v = 0;
-
 //write an object from setColors array (first of each theme)
 setColors.forEach((color, value) => 
 { 
