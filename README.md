@@ -9,8 +9,10 @@ app/index.ts:<br>
 import {applyColors, prefColor} from "../common/color/applyColors";<br>
 applyColors(prefColor);<br>
 
-# everything else is integrated<br><br>
-the latest chosen theme gets written to shared_preferences on unload<br>
+everything else is integrated<br><br>
+
+the latest chosen theme gets written to shared_preferences, so it will start with this on reloading the app<br>
 (Only short description. It's not complete yet. And sorry, I had some mess with tsconfigs. Will fix that)
 
 Any thoughts, ideas criticism are highly appreciated! :)
+--
