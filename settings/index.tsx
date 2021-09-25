@@ -1,14 +1,13 @@
-import {setColors} from "../common/color/colorThemes";
-
+import {themes} from "../common/color/colorThemes";
 
 let myColors =[]
 let v = 0;
-//write an object from setColors array (first of each theme)
-setColors.forEach((color, value) => 
+//write an object from themes[v][0](first color of each theme)
+themes.forEach((color, value) => 
 { 
   myColors.push(
   {
-    color: setColors[v], 
+    color: themes[v][0], 
     value: v
   }) 
   v++; 

@@ -9,17 +9,5 @@ const themes: string[][] =
     ['plum', 'magenta', 'white'],
 ];
 
-//writes array with first color of each theme
-let setColors:string [] = [];
-for(let i: number = 0; i<themes.length; i++)
-{
-    setColors[i]= (themes[i][0]);  
-};
-
-
-export {themes, setColors};
+export {themes};
 //themes to applyColors
-//setColors to settings/index => there push to myObject (color, value)
-//then colors = {myObject}
-
-//TODO do the loop on themes in settings directly?
