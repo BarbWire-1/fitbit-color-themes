@@ -1,5 +1,5 @@
 {
-	"extends": "../sdk-tsconfig.json",
+	"extends": "../tsconfig.json",
 	"compilerOptions": {
 		"noEmit": true,
 		"checkJs": true
@@ -8,5 +8,5 @@
 		"**/*.ts",
 		"**/*.js",
 		"../node_modules/fitbit-sdk-types/types/device"
-, "../common/color/applyColors.ts"	]
+	]
 }
