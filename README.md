@@ -8,11 +8,11 @@ all elements wich should have a color of theme need to be class="color+IndexOfCo
 app/index.ts:<br>
 import {applyColors, prefColor} from "../common/color/applyColors";<br>
 applyColors(prefColor);<br>
-(Think, this isn't necessary at all, if there is other content in index.ts)
 
 everything else is integrated<br><br>
-(Only short description. It's not complete yet)
+
+the latest chosen theme gets written to shared_preferences, so it will start with this on reloading the app<br>
+(Only short description. It's not complete yet. And sorry, I had some mess with tsconfigs. Will fix that)
 
 Any thoughts, ideas criticism are highly appreciated! :)
-
-(And sorry, had some mess with tsconfigs. Will fix that)
+--
