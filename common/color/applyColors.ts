@@ -18,7 +18,7 @@ function applyColors(theme :number)
         })
     }
 };
-applyColors(prefTheme);
+
 
 
 
