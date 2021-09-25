@@ -17,7 +17,6 @@ function applyColors(theme :number)
             el.style.fill = themes[theme][c];   
         })
     }
-    prefTheme = theme;
 };
 applyColors(prefTheme);
 

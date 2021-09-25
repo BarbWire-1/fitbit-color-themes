@@ -1,5 +1,5 @@
 //define color sets here as usual
-const themes: string[][] = 
+const themes :string[][] = 
 [
     ['tomato', 'blue', 'yellow'],
     ['sandybrown', 'white', 'grey'],
