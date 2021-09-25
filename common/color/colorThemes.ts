@@ -10,4 +10,4 @@ const themes: string[][] =
 ];
 
 export {themes};
-//themes to applyColors
+//themes to applyColors, settings
