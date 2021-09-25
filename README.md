@@ -7,9 +7,9 @@ All elements wich should have a color of theme need to be class="color+IndexOfCo
 
 app/index.ts:<br>
 Import {initColorThemes} from "../common/color/applyColors";<br>
-<initColorThemes>;<br>
+initColorThemes;<br><br>
 
-Everything else is integrated<br><br>
+Everything else is integrated:
 
 - The latest chosen theme gets written to shared_preferences, so it will start with this on reloading the app<br>
 - Every first color of themes will automatically appear as color-dot in settings page<br><br>
