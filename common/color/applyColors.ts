@@ -1,4 +1,6 @@
+//@ts-ignore
 import * as messaging from "messaging";
+//@ts-ignore
 import document  from "document";
 import {preferences} from "../shared_preferences";
 import {themes} from "./colorThemes";
@@ -15,6 +17,7 @@ function applyColors(theme :number) :void
     for(let c :number = 0; c<themes[theme].length; c++)
     {   
         //elements need to be class="color+indexInTheme" like color0, color1...
+        //@ts-ignore
         (document.getElementsByClassName("color" + c) as GraphicsElement[]).forEach((el) =>
         {
             el.style.fill = themes[theme][c];   
@@ -35,7 +38,7 @@ messaging.peerSocket.addEventListener("message", (evt) =>
         preferences.prefTheme = t;
     }
 });
-export function initColorThemes ()
+export function initColorThemes () :void
 {
     applyColors(prefTheme);
 }
