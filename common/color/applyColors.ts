@@ -1,4 +1,4 @@
-//@ts-ignore
+//@ts-ignore //these imports are only available in app
 import * as messaging from "messaging";
 //@ts-ignore
 import document  from "document";
