@@ -69,19 +69,19 @@ The elements you want to be filled with a color of your themes need to be classe
 
 
 <br>
-Now having x color-themes, all fills get applied to the elements with 
-<p align= "center">`class="color + '0 to x'"`<br>
+Now having x color-themes, all fills get applied to the elements with
 
- automatically.<br>
+`class = "color + (0 to x)"`
+<br>
 The first color of each theme gets automatically implied in your app's setting-page - and done.
 <br>
 
 ---
 <br>
-Please shout, if you have any issues or suggestions.<br>
+Please shout, if you have any issues or suggestions. And now...<br>
 <br>
 
-<p align= "center">Play it colorful! 🥳
+<p align= "center"><b>Play it colorful! 🥳
 
 
 
