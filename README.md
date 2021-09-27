@@ -71,7 +71,7 @@ The elements you want to be filled with a color of your themes need to be classe
 <br>
 Now having x color-themes, all fills get applied to the elements with
 
-`class = "color + (0 to x-1)"`
+`class = "'color' + (0 to x-1)"`
 <br>
 The first color of each theme gets automatically implied in your app's setting-page - and done.
 <br>
