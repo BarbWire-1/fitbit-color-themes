@@ -13,4 +13,4 @@
 		"**/*.jsx",
 		"../node_modules/fitbit-sdk-types/types/settings"
 	]
-}
+} 

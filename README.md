@@ -80,4 +80,7 @@ The first color of each theme gets automatically implied in your app's setting-p
 <br>
 Please shout, if you have any issues or suggestions.<br>
 <br>
+
 <p align= "center">Play it colorful! 🎨
+
+

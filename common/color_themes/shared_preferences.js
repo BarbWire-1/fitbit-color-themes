@@ -20,4 +20,4 @@ me.addEventListener("unload", () => {
   } catch (error) {
     console.error("Failed to save " + FILE_NAME);
   }
-});
+}); 

@@ -23,5 +23,5 @@ const themesFirsts = themes.map((theme, index) => ({ color: theme[0], value: ind
     );
   }
   
-  registerSettingsPage(Colors);
+  registerSettingsPage(Colors); 
   
