@@ -1,4 +1,4 @@
-# fitbit-color-themes
+# fitbit-color-themes 🎨
 ## Description:
 This code automates the use of color-themes in `fitbit` apps.<br><br>
 You only need to define your themes and add a corresponding class to your elements, you want those colors be assigned to.
@@ -81,6 +81,10 @@ The first color of each theme gets automatically implied in your app's setting-p
 Please shout, if you have any issues or suggestions.<br>
 <br>
 
-<p align= "center">Play it colorful! 🎨
+<p align= "center">Play it colorful! 🥳
+
+
+
+
 
 
