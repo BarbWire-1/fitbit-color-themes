@@ -43,4 +43,4 @@ function sendSettingData(data)
   {
     console.log("No peerSocket connection");
   }
-};
+}; 

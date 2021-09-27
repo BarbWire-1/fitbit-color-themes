@@ -11,4 +11,4 @@ const themes :string[][] =
 
 export {themes};
 //in settings/index:
-//import {themes} from "../common/color_themes/colorThemes";
+//import {themes} from "../common/color_themes/colorThemes"; 
