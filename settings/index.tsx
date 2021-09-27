@@ -1,7 +1,7 @@
-import {themes} from "../common/color/colorThemes";
+import {themes} from "../common/color_themes/colorThemes";
 
-//create obj, incl each firstColor of theme {color: string, value: number}
-const themesFirst = themes.map((theme, index) => ({ color: theme[0], value: index }))
+//create obj, firstColor of each theme {color: string, value: number}
+const themesFirsts = themes.map((theme, index) => ({ color: theme[0], value: index }))
 //console.log(JSON.stringify(themesFirst));
 
   function Colors(props) 
@@ -15,7 +15,7 @@ const themesFirst = themes.map((theme, index) => ({ color: theme[0], value: inde
             settingsKey="ColorTheme" 
             
             //so color-dots always match first of each color-theme "automatically"
-            colors = {themesFirst}
+            colors = {themesFirsts}
             
           />
         </Section>

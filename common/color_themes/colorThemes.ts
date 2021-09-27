@@ -6,8 +6,9 @@ const themes :string[][] =
     ['gold', 'limegreen', '#000000'],
     ['aquamarine', 'turquoise', 'yellow'],
     ['deepskyblue', 'blue', 'red'],
-    ['plum', 'magenta', 'white'],
+    ['plum', 'magenta','white'],
 ];
 
 export {themes};
-//themes to applyColors, settings
+//in settings/index:
+//import {themes} from "../common/color_themes/colorThemes";

@@ -2,7 +2,9 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { me } from 'appbit';
 
-const FILE_NAME = "fitbit_color_themes.cbor";
+//give this cbor an individual name
+//here my apps UUID_fct.cbor
+const FILE_NAME = "f100f76b-0a9e-488f-ba35-d1a8531a2d4b_fct.cbor";
 
 export let preferences = {};
 
