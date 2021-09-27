@@ -1,4 +1,5 @@
 # fitbit-color-themes (work in progress)
+(changed structure! update of readme will follow soon)<br><br>
 common/color/colorThemes.ts:<br>
 Create array with color themes
 
