@@ -31,7 +31,7 @@ Integrate the code from `settings/index.tsx` into your index file. <br><br>
 
 ---
 ## Usage:
-Define your array of color-themes in `common/color_themes/colorThemes.ts` like in the following example:
+Define your array of color-themes in `common/color_themes/colorThemes.ts` like in the following example (no matter how many themes, or how many colors per theme):
 ```javascript
 const themes :string[][] = 
 [
