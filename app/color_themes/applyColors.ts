@@ -27,7 +27,7 @@ function applyColors(theme :number) :void
 //get themes[t] on evt then call applyColors
 messaging.peerSocket.addEventListener("message", (evt) => 
 {   
-    if (evt?.data?.value && evt.data.key === "ColorTheme") 
+    if (evt.data?.value && evt.data.key === "ColorTheme") 
     {   
         let t :number = evt.data.value;
         applyColors(t);
